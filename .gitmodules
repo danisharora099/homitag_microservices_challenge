@@ -1,0 +1,6 @@
+[submodule "homitag_microservices_genres"]
+	path = homitag_microservices_genres
+	url = https://github.com/danisharora099/homitag_microservices_genres
+[submodule "homitag_microservices_movies"]
+	path = homitag_microservices_movies
+	url = https://github.com/danisharora099/homitag_microservices_movies
