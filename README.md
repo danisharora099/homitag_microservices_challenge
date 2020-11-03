@@ -3,6 +3,7 @@ This is a backend development challenge task for Homitag -
 The microservices include:
   1. Genres
   2. Movies
+and use MongoDB as a database
  
 The 2 repositories have been added to their parent (this) as submodules; To clone this directory along with the submodules, please run the following commands: 
 ```
