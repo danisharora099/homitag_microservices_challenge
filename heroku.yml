@@ -1,4 +1,0 @@
-build:
-  docker:
-    genres: homitag_microservices_genres/Dockerfile
-    movies: homitag_microservices_movies/Dockerfile
