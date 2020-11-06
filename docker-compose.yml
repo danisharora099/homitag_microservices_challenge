@@ -2,26 +2,30 @@ version: "3"
 services:
   genres:
     build: ./homitag_microservices_genres
+    environment:
+      - atlas_pw=Ramesh104
     ports:
       - "4500:4500"
-    depends_on:
-      - database
-    links:
-      - database
+    # depends_on:
+    #   - database
+    # links:
+    #   - database
   movies:
     build: ./homitag_microservices_movies
+    environment:
+      - atlas_pw=Ramesh104
     ports:
       - "4600:4600"
-    depends_on:
-      - database
-    links:
-      - database
-  database:
-    image: mongo:latest
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=password
-    ports:
-      - "27017:27017"
-    volumes:
-      - ./mongodb_data:/data/db
+    # depends_on:
+    #   - database
+    # links:
+    #   - database
+  # database:
+  #   image: mongo:latest
+  #   environment:
+  #     - MONGO_INITDB_ROOT_USERNAME=root
+  #     - MONGO_INITDB_ROOT_PASSWORD=password
+  #   ports:
+  #     - "27017:27017"
+  #   volumes:
+  #     - ./mongodb_data:/data/db
